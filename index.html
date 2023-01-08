@@ -38,12 +38,11 @@
   ======================================================== -->
 </head>
 
-<body>
-
+<body >
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="container">
-
+      <script src="sample.js"></script>
       <h1><a href="index.html">Priyanka Prasad</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
@@ -71,6 +70,21 @@
       </div>
 
     </div>
+
+
+
+    
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    <script>
+      var cursor  = document.querySelector(".cursor");
+      var cursor2 = document.querySelector(".cursor2");
+
+      document.addEventListener("mousemove",function(e){
+        cursor.style =  "left: "+ e.clientX + "px; top: " + e.clientY + "px;";
+        cursor2.style = "left: "+ e.clientX + "px; top: " + e.clientY + "px;";
+      });
+    </script>
   </header>
   <!-- End Header -->
 
