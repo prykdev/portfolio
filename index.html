@@ -39,6 +39,8 @@
 </head>
 
 <body >
+  <div class="cursor"></div>
+        <div class="cursor-front"></div>
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="container">
@@ -71,20 +73,6 @@
 
     </div>
 
-
-
-    
-    <div class="cursor"></div>
-    <div class="cursor2"></div>
-    <script>
-      var cursor  = document.querySelector(".cursor");
-      var cursor2 = document.querySelector(".cursor2");
-
-      document.addEventListener("mousemove",function(e){
-        cursor.style =  "left: "+ e.clientX + "px; top: " + e.clientY + "px;";
-        cursor2.style = "left: "+ e.clientX + "px; top: " + e.clientY + "px;";
-      });
-    </script>
   </header>
   <!-- End Header -->
 
@@ -476,6 +464,7 @@
   <script src="https://kit.fontawesome.com/450a8dfd72.js" crossorigin="anonymous"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="new.js"></script>
 
 </body>
 
